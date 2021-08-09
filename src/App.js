@@ -3,6 +3,8 @@ import './App.css';
 import data from './data/payload.json';
 import Components from './components.js';
 
+import './styles.css';
+
 function App() {
   return (
     <div className="App">
@@ -11,7 +13,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      <div className="Store">
+      <div id="store">
         {data.components.map(block => Components(block))}
       </div>
 

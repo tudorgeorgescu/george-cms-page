@@ -18,7 +18,7 @@ export default block => {
   }
   // component doesn't exist yet
   return React.createElement(
-    () => <div>The component {block.component} has not been created yet.</div>,
-    { key: block._uid }
+    () => <div>The component {block.__component} has not been created yet.</div>,
+    { key: block.id }
   );
 }
