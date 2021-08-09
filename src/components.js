@@ -1,8 +1,10 @@
 import React from "react";
 import Stripe from "./components/Stripe";
+import ProductBox from "./components/ProductBox";
 
 const Components = {
-  "ui-component.stripe": Stripe
+  "ui-component.stripe": Stripe,
+  "ui-component.product-box": ProductBox
 };
 
 export default block => {
