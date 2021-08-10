@@ -1,3 +1,10 @@
+.ProductCardWrapper {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .ProductCard {
   display: flex;
   flex-direction: column;
@@ -23,7 +30,7 @@
   color: #fff;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 370px) {
   .ProductCard {
     width: 80vw;
     height: 125px;

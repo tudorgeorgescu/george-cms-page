@@ -11,7 +11,7 @@ export default function ProductCard({ title, icon, id, cardsBgColor, iconColor =
   let color = cssColors.includes(iconColor.toLowerCase()) ? iconColor : "white";
 
   return (
-    <div style={{ display: "inline-flex", flexDirection: "column" }}>
+    <div className={Classes.ProductCardWrapper}>
       <div className={Classes.ProductCard} style={{ backgroundColor: `${background}` }}>
         <div className={Classes.Icon}>{getIconComponent({ icon: icon, color: `${color}`, fontSize: "3rem", alignSelf: "left" })}</div>
         <p className={Classes.InnerTitle}>{title}</p>
