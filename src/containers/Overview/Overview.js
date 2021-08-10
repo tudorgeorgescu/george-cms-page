@@ -17,7 +17,7 @@ export default function Overview() {
     const productCardData = Object.values(storeMainData.body).filter((item) => item.__component === "ui-components.product-card")[0];
     return (
       <div className={Classes.Overview}>
-        <ProductCard icon={productCardData.product.icon} title={productCardData.product.title} subtitle={productCardData.product.subtitle} backgroundColor={productCardData.backgroundColor.color} />
+        <ProductCard icon={productCardData.product.icon} title={productCardData.product.title} subtitle={productCardData.product.subtitle} backgroundColor={productCardData.backgroundColor.color} img={productCardData.product.productImage} />
       </div>
     );
   }

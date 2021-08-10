@@ -26,21 +26,21 @@ let icons = {
   FaMoneyBillWaveAlt,
   FaCcVisa,
   FaRegFileArchive,
-  CgUnavailable
+  CgUnavailable,
 };
 
-export default function ProductCard({ id, title, subtitle, productId, icon, backgroundColor, type }) {
+export default function ProductCard({ id, title, subtitle, productId, icon, backgroundColor, type, img }) {
   let TagName = icons[icon] ? icons[icon] : CgUnavailable;
+  console.log(img.url);
 
   return (
     <div className={Classes.ProductCard}>
-      <div className={Classes.ProductCardHeader}>
-        <h3>{title}</h3>
-      </div>
       <div className={Classes.ProductCardBody} style={{ backgroundColor: backgroundColor }}>
-        <TagName className={Classes.Icon} />
+        {/*         <TagName className={Classes.Icon} /> */}
+        <img src={`http://46.101.236.251:1337${img.url}`} alt="" />
       </div>
       <div className={Classes.ProductCardFooter}>
+        <h4>{title}</h4>
         <p>{subtitle}</p>
       </div>
     </div>
