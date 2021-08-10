@@ -1,0 +1,43 @@
+.ProductCard {
+  margin: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+  max-width: 300px;
+  border: 1px solid var(--mainDark);
+  border-radius: 5px;
+}
+
+.ProductCardHeader {
+  width: 100%;
+  padding: 0.5em;
+  background-color: var(--mainDark);
+  color: #fff;
+  text-align: center;
+}
+
+.ProductCardBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.Icon {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0.5em auto;
+  font-size: 4rem;
+}
+
+.ProductCardFooter {
+  width: 100%;
+  padding: 0.5em;
+  background-color: var(--mainDark);
+  color: #fff;
+  text-align: center;
+}

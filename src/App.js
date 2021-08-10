@@ -1,16 +1,27 @@
-import React from 'react';
-import './App.css'
+import React from "react";
+import { fetchStoreMainData } from "./utils/api";
+import "./App.css";
 
-import Overview from './containers/Overview/Overview';
+import { StoreMainDataProvider } from "./contexts/storeMainData";
+
+import Stripe from "./components/Stripe/Stripe";
+import Overview from "./containers/Overview/Overview";
 
 function App() {
+  const [storeMainData, setStoreMainData] = React.useState("");
+
+  React.useEffect(() => {
+    fetchStoreMainData()
+      .then((data) => setStoreMainData(data))
+      .catch(({ message }) => console.log(message));
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to Tudor's Store DSL</h1>
-      </header>
-      <Overview/>
-
+      <StoreMainDataProvider value={storeMainData}>
+        <Stripe />
+        <Overview />
+      </StoreMainDataProvider>
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.Overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 1em 0.5em;
+  max-width: 900px;
+
+  border: 1px solid lightblue;
+  color: var(--mainDark);
+}
