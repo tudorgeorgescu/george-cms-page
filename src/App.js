@@ -1,22 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import data from './data/payload.json';
-import Components from './components.js';
+import React from "react";
+import { fetchStoreMainData } from "./utils/api";
+import "./App.css";
 
-import './styles.css';
+import { StoreMainDataProvider } from "./contexts/storeMainData";
+
+import Stripe from "./components/Stripe/Stripe";
+import Overview from "./containers/Overview/Overview";
 
 function App() {
+  const [storeMainData, setStoreMainData] = React.useState("");
+
+  React.useEffect(() => {
+    fetchStoreMainData()
+      .then((data) => setStoreMainData(data))
+      .catch(({ message }) => console.log(message));
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to Tudor's Store DSL</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-
-      <div id="store">
-        {data.components.map(block => Components(block))}
-      </div>
-
+      <StoreMainDataProvider value={storeMainData}>
+        <Stripe />
+        <Overview />
+      </StoreMainDataProvider>
     </div>
   );
 }
