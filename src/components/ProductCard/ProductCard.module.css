@@ -1,0 +1,51 @@
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 125px;
+  border-radius: 10px;
+  margin: 0.5em;
+  padding: 1.5em;
+}
+
+.OuterTitle {
+  max-width: 125px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: grey;
+  font-weight: 500;
+}
+
+.InnerTitle {
+  display: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+  .ProductCard {
+    width: 80vw;
+    height: 125px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .OuterTitle {
+    display: none;
+  }
+
+  .InnerTitle {
+    width: 70%;
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  .Icon {
+    margin: 0 auto;
+    width: 30%;
+  }
+}

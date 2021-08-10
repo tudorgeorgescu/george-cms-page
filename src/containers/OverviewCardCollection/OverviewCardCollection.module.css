@@ -1,9 +1,21 @@
 .OverviewCardCollection {
-}
-
-.OverviewCardCollection .container {
+  width: 100%;
   flex-direction: row;
   text-align: start;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.Title {
+  text-align: left;
+  padding-left: 0.75em;
+}
+
+.Cards {
+  width: 100%;
+  flex-direction: row;
+  text-align: start;
+  justify-content: center;
+  align-items: start;
 }

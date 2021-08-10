@@ -18,13 +18,15 @@ export default function Overview() {
     const overviewCardCollectionData = Object.values(storeMainData.body).filter((item) => item.__component === "ui-components.product-card-collection");
 
     return (
-      <div className={Classes.Overview}>
-        {/* Feature product card */}
-        <FeaturedProductCard icon={featuredProductCardData.product.icon} title={featuredProductCardData.product.title} subtitle={featuredProductCardData.product.subtitle} backgroundColor={featuredProductCardData.backgroundColor.color} productImage={featuredProductCardData.product.productImage} />
-        {/* Card collections */}
-        {overviewCardCollectionData.map((cardCollection) => (
-          <OverviewCardCollection title={cardCollection.grouping.name} id={cardCollection.grouping.id} key={cardCollection.grouping.id} cardsBgColor={cardCollection.backgroundColor.color} />
-        ))}
+      <div className="container">
+        <div className={Classes.Overview}>
+          {/* Feature product card */}
+          <FeaturedProductCard icon={featuredProductCardData.product.icon} title={featuredProductCardData.product.title} subtitle={featuredProductCardData.product.subtitle} backgroundColor={featuredProductCardData.backgroundColor.color} productImage={featuredProductCardData.product.productImage} />
+          {/* Card collections */}
+          {overviewCardCollectionData.map((cardCollection) => (
+            <OverviewCardCollection title={cardCollection.grouping.name} id={cardCollection.grouping.id} key={cardCollection.grouping.id} cardsBgColor={cardCollection.backgroundColor.color} />
+          ))}
+        </div>
       </div>
     );
   }
