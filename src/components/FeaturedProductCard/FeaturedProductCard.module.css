@@ -1,0 +1,58 @@
+.FeaturedProductCard {
+  margin: 0.5em;
+  margin-top: -3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+  max-width: 300px;
+  border: 1px solid var(--lightBg);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #cfcdcd;
+}
+
+.FeaturedProductCardBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+.FeaturedProductCardBody img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+.Icon {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0.5em auto;
+  font-size: 4rem;
+}
+
+.FeaturedProductCardFooter {
+  width: 100%;
+  padding: 0.5em 1em;
+  padding-bottom: 1em;
+  background-color: #fff;
+  color: grey;
+  border-top: 1px solid #f4f6fa;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: left;
+}
+
+.FeaturedProductCardFooter h4 {
+  margin-bottom: 0.75em;
+}
+
+.FeaturedProductCardFooter p {
+  font-size: 0.8rem;
+}

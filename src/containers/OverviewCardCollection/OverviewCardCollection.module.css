@@ -1,0 +1,9 @@
+.OverviewCardCollection {
+}
+
+.OverviewCardCollection .container {
+  flex-direction: row;
+  text-align: start;
+  justify-content: left;
+  align-items: left;
+}

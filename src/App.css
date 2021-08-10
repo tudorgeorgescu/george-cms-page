@@ -3,3 +3,9 @@
   --lightBg: #f4f6fa;
   --maxAppWidth: 900px;
 }
+
+.container {
+  display: flex;
+  width: 700px;
+  border: 1px solid red;
+}
