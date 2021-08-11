@@ -1,4 +1,4 @@
-.OverviewCardCollection {
+.OverviewCardGroup {
   width: 100%;
   flex-direction: row;
   text-align: start;
@@ -7,7 +7,7 @@
   margin-top: 1.5em;
 }
 
-.Title {
+.GroupTitle {
   text-align: left;
   padding-left: 0.75em;
 }

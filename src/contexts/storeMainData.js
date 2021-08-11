@@ -2,5 +2,5 @@ import React from "react";
 
 const StoreMainDataContext = React.createContext();
 
-export default StoreMainDataContext;
+export const StoreMainDataConsumer = StoreMainDataContext;
 export const StoreMainDataProvider = StoreMainDataContext.Provider;

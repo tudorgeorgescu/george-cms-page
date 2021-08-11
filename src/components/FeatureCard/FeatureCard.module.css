@@ -1,0 +1,46 @@
+.FeatureCard {
+  margin: 0.25em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  border: 1px solid var(--lightBg);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #cfcdcd;
+}
+
+.FeatureCardBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.FeatureCardBody img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+.FeatureCardFooter {
+  width: 100%;
+  padding: 0.5em 1em;
+  padding-bottom: 1em;
+  background-color: #fff;
+  color: grey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: left;
+}
+
+.FeatureCardFooter h4 {
+  padding: 0.75em 0;
+}
+
+.FeatureCardFooter p {
+  padding: 0.75em 0;
+  font-size: 0.8rem;
+}

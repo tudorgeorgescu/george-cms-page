@@ -1,24 +1,37 @@
 .Stripe {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin: 0 auto;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .Stripe h1 {
   padding: 1em;
+  padding-top: 0;
   padding-left: 0.75em;
-  padding-top: 2em;
-  padding-bottom: 2em;
   color: #fff;
 }
 
-.Stripe .container {
-  flex-direction: row;
-  text-align: start;
-  justify-content: left;
-  align-items: left;
+.Stripe button {
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5em;
+  cursor: pointer;
+  min-height: 2.5em;
+}
+
+.BtnPlaceholder {
+  width: 10px;
+  height: 2.5em;
+  min-height: 2.5em;
+  font-size: 2rem;
+}
+
+.Stripe button:hover {
+  color: rgb(196, 196, 196);
 }
